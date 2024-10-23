@@ -10,11 +10,13 @@
 </head>
 
 <body>
+
+    <!-- navbar -->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8 md:hidden">
             <path fill-rule="evenodd"
                 d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
                 clip-rule="evenodd" />
@@ -22,7 +24,7 @@
 
 
 
-        <ul class="p-4 flex gap-5 text-gray-500 hover:text-black hidden md:flex">
+        <ul class="gap-5 text-gray-500 hover:text-black hidden md:flex">
             <li>
                 <a class="hover:underline " href="intex.html">Home</a>
             </li>
@@ -35,7 +37,26 @@
         </ul>
     </nav>
 
+    <!-- sidenav -->
 
+    <nav id="sidenav" class="bg-green-100 fixed top-0 z-30"style="width: 50%;height: 100vh; right:-50%">
+        <div class="text-right p-5">
+            <p id="closenav" class="cursor-pointer">X</p>
+        </div>
+        <ul class="gap-10  text-gray-500 hover:text-black flex flex-col items-center">
+            <li>
+                <a class="hover:underline " href="intex.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class=" hover:underline" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- header -->
     <section class="bg-green-100 p-5 md:p-10 flex justify-center">
         <div>
             <p class="mb-5">We offer you a wide range of Artificial and Natural flowers</p>
@@ -54,7 +75,7 @@
 
 
     </section>
-
+    <!-- about -->
     <div class="text-center m-5 p-5">
         <h1 class="text-3xl font-bold"> About Us</h1>
         <p>This site for those who admire the beauty and harmony of nature</p>
@@ -165,19 +186,21 @@
 
     <section class="text-center">
         <h1 class="font-bold text-2xl ">Join Our News Channel</h1>
-         <p>Sign up our email news paper to exclusive discounts ,updates,and more</p>
-    <input type="text" class=" border border-black p-3 m-3" style="width: 80%;"><br>
-<button class="text-white bg-black p-3 m-3 rounded">Subscripe</button>
-</section>
-<!-- 
+        <p>Sign up our email news paper to exclusive discounts ,updates,and more</p>
+        <input type="text" class=" border border-black p-3 m-3" style="width: 80%;"><br>
+        <button class="text-white bg-black p-3 m-3 rounded">Subscripe</button>
+    </section>
+    <!-- 
 
 footer section -->
-<section class="bg-green-100 p-10 flex flex-col gap-3">
-    <h1 class="text-2xl font-bold">Greenden</h1>
-    <p>The standard chunk of lorem used since the 1500s is reprduced below for those interest</p>
-    <p>@2021 Greenden.com</p>
+    <section class="bg-green-100 p-10 flex flex-col gap-3">
+        <h1 class="text-2xl font-bold">Greenden</h1>
+        <p>The standard chunk of lorem used since the 1500s is reprduced below for those interest</p>
+        <p>@2021 Greenden.com</p>
 
-</section>
+    </section>
+
+    <script src="index.js"></script>
 
 
 
